@@ -22,7 +22,7 @@ defmodule ExfileSwift.MixProject do
   defp deps do
     [
       {:exfile, "~> 0.3.6"},
-      {:ex_swift, "~> 0.1.0", github: "scarfacedeb/ex_swift"}
+      {:ex_swift, "~> 0.2.0"}
     ]
   end
 end
