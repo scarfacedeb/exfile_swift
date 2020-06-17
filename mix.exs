@@ -24,7 +24,8 @@ defmodule ExfileSwift.MixProject do
   defp deps do
     [
       {:exfile, "~> 0.3.6"},
-      {:ex_swift, "~> 0.2.0"}
+      {:ex_swift, "~> 0.2.0"},
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
   end
 
