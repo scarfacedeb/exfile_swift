@@ -7,7 +7,9 @@ defmodule ExfileSwift.MixProject do
       version: "0.2.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: "Exfile backend for OpenStack Swift storage, based on ExSwift",
+      package: package()
     ]
   end
 
@@ -23,6 +25,14 @@ defmodule ExfileSwift.MixProject do
     [
       {:exfile, "~> 0.3.6"},
       {:ex_swift, "~> 0.2.0"}
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      maintainers: ["Andrew Volozhanin"],
+      links: %{"Github" => "https://github.com/scarfacedeb/exfile_swift"}
     ]
   end
 end
